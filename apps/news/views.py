@@ -5,7 +5,7 @@ from rest_framework.pagination import LimitOffsetPagination
 
 from .models import News, Status, Comment
 from .permissions import IsAuthorOrIsAuthenticated, IsAdminOrReadOnly, IsAuthor
-from .serializer import NewsSerializer, StatusSerializer, CommentSerializer
+from .serializers import NewsSerializer, StatusSerializer, CommentSerializer
 
 
 class NewsViewSet(viewsets.ModelViewSet):

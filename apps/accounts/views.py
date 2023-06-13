@@ -3,7 +3,7 @@ from django.shortcuts import render
 from rest_framework import generics
 
 from .models import User, Author
-from .serializer import UserSerializer
+from .serializers import UserSerializer
 
 
 class UserRegisterAPIView(generics.CreateAPIView):
