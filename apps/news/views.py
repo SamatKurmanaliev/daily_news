@@ -38,7 +38,7 @@ class CommentListCreateAPIView(generics.ListCreateAPIView):
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer
     permission_classes = [IsAuthorOrIsAuthenticated]
-    authentication_classes = [TokenAuthentication,BasicAuthentication,SessionAuthentication]
+    authentication_classes = [TokenAuthentication] #что то одно выбрать
 
     def get_queryset(self):
         return super().get_queryset().filter(news_id=self.kwargs['news_id'])

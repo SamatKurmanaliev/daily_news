@@ -1,5 +1,5 @@
 /.idea
-envs/.env_local
+.env_local
 *.log
 *.pot
 *.pyc
