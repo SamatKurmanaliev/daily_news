@@ -1,4 +1,4 @@
-from .models import News,NewsStatus,CommentStatus,Comment,Status
+from .models import News, NewsStatus, CommentStatus, Comment, Status
 from rest_framework import serializers
 
 

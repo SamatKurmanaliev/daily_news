@@ -1,5 +1,5 @@
 from rest_framework import permissions
-from apps.accounts.models import Author, User
+from apps.accounts.models import Author
 
 
 class IsAuthorOrIsAuthenticated(permissions.BasePermission):

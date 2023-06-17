@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import News,Comment,Status,CommentStatus,NewsStatus
+from .models import News, Comment, Status, CommentStatus, NewsStatus
 
 
 @admin.register(News)
@@ -19,7 +19,7 @@ class NewsStatusAdmin(admin.ModelAdmin):
 
 @admin.register(CommentStatus)
 class StatusCommentAdmin(admin.ModelAdmin):
-    verbose_name_plural="comment reactions"
+    verbose_name_plural = "comment reactions"
 
 
 @admin.register(Status)
